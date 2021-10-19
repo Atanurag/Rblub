@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>*{
+	margin: 0;
+	padding: 0;
+}
+body{
+ background-color: black;
+
+}
+.container{
+	margin: auto;
+margin-top: 32px;
+  position: relative;
+  display: flex;
+	align-items:  center;
+	
+height:600px;
+width:450px;
+}
+
+
+#blub{
+	position: absolute;
+    margin-top: 150px;
+    margin-left: 117px;
+    height: 194px;
+    width: 190px;
+    border: 2px solid #888888;
+    border-radius: 145px;
+    background-color: #888888;
+    
+}
+#main{
+	margin-left: 13px;
+margin-bottom: 628px;
+    position: absolute;
+
+
+}
+img{position: absolute;
+    height: 102px;
+    width: 89px;
+    margin-top: 184px;
+    margin-left: 49px;}
+p{
+	margin-left: 44px;
+}
+button{
+	font-size: 13px;
+margin-top: 500px;
+	padding: 33px;
+}
+button::hover{
+border: 2px solid white
+}
+
+
+@media all and (max-width: 600px){
+	
+	button{
+		font-weight: bold;
+		font-size: 16px;
+	border: 2px solid white	;
+margin-top: -500px;
+    padding: 23px;
+}#main{
+	margin-left: 13px;
+margin-bottom: 700px;
+    position: absolute;
+
+	
+}
+</style>
+<body>
+	
+<div class="container">
+	
+
+
+
+
+
+<div id="main">
+<div id="blub"> 
+<img src="cap1.png" alt="">
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<button onclick="gg()">on</button>
+
+
+
+<button onclick="cle()">off</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+
+
+
+	function gg() {
+		var a=["#e0281b","#f0763a","#ffec40","#75ffed","#ffffff","#ddfa73","#f1fa73","#ffa273"];
+		
+        var t=a[Math.floor(Math.random()*8)];
+       
+	var cha=document.getElementById('blub');
+cha.style.boxShadow="1px 1px 162px  #fffefc";
+	cha.style.backgroundColor= t;
+	console.log(t);
+	cha.style.border= "white";
+
+
+console.log(cha);}
+
+
+
+
+function cle(){
+	
+
+	
+var cha=document.getElementById('blub');
+cha.style.boxShadow="1px 1px 108px  black";
+
+cha.style.backgroundColor= "#888888";
+	
+}
+
+</script>
+</body>
+</html>
